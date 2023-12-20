@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>language translation</title>
+<style>
+    
+    #header{
+        background-color: yellow;
+        width:100px;
+        height:20px;
+        border:0.5px solid black;
+        border-collapse: collapse;
+    }
+    td{
+        border:1px solid black;
+        text-align: center;
+        font-size: 15px;
+    }
+    table{
+        border-collapse: collapse;
+        margin-left:300px;
+       
+    }
+</style>
+</head>
+<body>
+    <table>
+        
+    </table>
+    <script>
+        function printlist(){
+            document.write('<table>');
+                const list0=["English","Spanish","Kannada","Arabic"];
+                var list1=["Sun","Mon","Tue","Wed","Thu","Fri","Sat","January","February","March","April","May","June","July","August","September","October","November","December"];
+                var list2=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+                var list3=["ಭಾನುವಾರ","ಸೋಮವಾರ","ಮಂಗಳವಾರ","ಬುಧವಾರ","ಗುರುವಾರ","ಶುಕ್ರವಾರ","ಶನಿವಾರ","ಜನವರಿ","ಫೆಬ್ರುವರಿ","ಮಾರ್ಚ್","ಏಪ್ರಿಲ್","ಮೇ","ಜೂನ","ಜುಲೈ","ಆಗಸ್ಟ್","ಸೆಪ್ಟೆಂಬರ್","ಅಕ್ಟೋಬರ್","ನವೆಂಬರ್","ಡಿಸೆಂಬರ್"];
+                var list4=["الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت","يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"];
+                document.write('<tr>');
+          for(let day of list0){
+
+                    document.write('<th id="header">'+day+'</th>');
+                   
+          }
+          document.write('</tr>')
+        
+            for(let i=0;i<19;i++){
+                document.write('<tr>');
+                      document.write('<td>'+list1[i]+'</td>');
+                      document.write('<td>'+list2[i]+'</td>')
+                      document.write('<td>'+list3[i]+'</td>')
+                      document.write('<td>'+list4[i]+'</td>')
+            }
+            document.write('</tr>')
+           
+            
+          document.write('</table');
+}
+                    
+        printlist();
+    </script>
+</body>
+</html>
